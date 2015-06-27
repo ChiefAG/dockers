@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if docker build -t agtech/base-ubuntu-64 . ; then
+    echo "Build succeeded."
+else
+    echo "Build failed. Check Dockerfile for errors."
+fi
